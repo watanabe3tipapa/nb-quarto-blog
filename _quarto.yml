@@ -3,8 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "My Quarto Blog"
-  description: "A blog about data science, programming, and technology"
+  title: "NB Quarto Blog"
+  description: "A blog about programming, and technology"
   navbar:
     right:
       - about.qmd
@@ -14,7 +14,7 @@ website:
   search: true
   page-footer: 
     center: "© 2024 watanabe3tipapa. Built with [Quarto](https://quarto.org/)"
-  repo-url: "https://github.com/watanabe3tipapa/quarto-blog"
+  repo-url: "https://github.com/watanabe3tipapa/nb-quarto-blog"
   repo-actions: [edit, issue]
     
 format:
