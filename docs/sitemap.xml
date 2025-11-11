@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/about.html</loc>
-    <lastmod>2025-11-11T11:42:27.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/blog/test-post/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/post-with-code/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/programming/test-quarto-blog/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.757Z</lastmod>
-  </url>
-  <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.731Z</lastmod>
-  </url>
-  <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/python-tips/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.762Z</lastmod>
-  </url>
-  <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/programming/getting-started-with-web-development/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.751Z</lastmod>
-  </url>
-  <url>
-    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/data-visualization/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.741Z</lastmod>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/from-nb.html</loc>
+    <lastmod>2025-11-11T11:55:19.232Z</lastmod>
   </url>
   <url>
     <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/welcome/index.html</loc>
-    <lastmod>2025-11-11T11:42:27.767Z</lastmod>
+    <lastmod>2025-11-11T11:55:19.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/data-visualization/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.246Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/programming/getting-started-with-web-development/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/programming/test-quarto-blog/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/python-tips/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.271Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/programming/from-nb/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/post-with-code/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/posts/blog/test-post/index.html</loc>
+    <lastmod>2025-11-11T11:55:19.241Z</lastmod>
+  </url>
+  <url>
+    <loc>https://watanabe3tipapa.github.io/quarto-blog/about.html</loc>
+    <lastmod>2025-11-11T11:55:19.226Z</lastmod>
   </url>
 </urlset>
