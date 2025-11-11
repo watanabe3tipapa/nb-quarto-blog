@@ -1,0 +1,59 @@
+name: Render Quarto site to docs on .md changes
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Setup R (for R code chunks)
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R packages (if needed)
+        run: |
+          Rscript -e 'if (!requireNamespace("knitr", quietly = TRUE)) install.packages("knitr")'
+          Rscript -e 'if (!requireNamespace("rmarkdown", quietly = TRUE)) install.packages("rmarkdown")'
+
+      - name: Ensure date in front matter (.md/.qmd)
+        run: bash .github/scripts/add_date_frontmatter.sh
+
+      - name: Commit auto date (no CI)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "[skip ci] chore: add date to front matter"
+          file_pattern: |
+            **/*.md
+            **/*.qmd
+          skip_dirty_check: false
+
+      - name: Render site
+        run: quarto render
+
+      - name: Commit rendered site to docs/
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: render Quarto site to docs"
+          file_pattern: docs/**
+
+      - name: Upload docs as artifact (debug)
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-docs
+          path: docs
+
