@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/python-tips/index.html",
+      "/posts/programming/test-quarto-blog/index.html",
+      "/posts/programming/getting-started-with-web-development/index.html",
+      "/posts/post-with-code/index.html",
+      "/posts/data-visualization/index.html",
+      "/posts/welcome/index.html"
+    ]
+  }
+]

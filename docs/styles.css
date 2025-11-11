@@ -1,0 +1,84 @@
+/* Custom CSS styles for Quarto Blog */
+
+/* Improve typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Style the blog title */
+.navbar-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Improve post cards */
+.quarto-listing-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.quarto-listing-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Style code blocks */
+pre {
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+}
+
+code {
+  background-color: #f6f8fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+/* Improve about page styling */
+.about-template {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Style links */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Improve footer */
+.page-footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #e1e4e8;
+  font-size: 0.9rem;
+  color: #6a737d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+  
+  .about-image {
+    width: 120px;
+    height: 120px;
+  }
+}
