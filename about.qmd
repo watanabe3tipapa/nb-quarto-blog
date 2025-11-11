@@ -8,12 +8,12 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/watanabe3tipapa
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
+    - icon: x
+      text: X
+      href: https://x.com
+    - icon: facebook
+      text: Facebook
+      href: https://facebook.com
 ---
 
 # About Me
