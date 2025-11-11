@@ -1,10 +1,6 @@
 # nb-quarto-blog
 
-<<<<<<< HEAD
 Quarto で構築した個人ブログ(テンプレート)です。
-=======
-Quarto で構築する個人ブログ（テンプレート）です。
->>>>>>> update
 
 ## 前提
 - Quarto（最新版）: https://quarto.org
@@ -61,17 +57,6 @@ quarto render
 - `freeze: true` により計算結果はキャッシュされます。再実行を避ける運用も可能です。
 
 ## ライセンス
-<<<<<<< HEAD
 - MIT
 
 ---
-
-
-
-
-
-=======
-MIT
-
----
->>>>>>> update
