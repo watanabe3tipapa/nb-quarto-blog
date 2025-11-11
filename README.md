@@ -1,6 +1,6 @@
-# quarto-blog
+# nb-quarto-blog
 
-Quarto で構築した個人ブログです。データサイエンス、プログラミング、テクノロジーに関する記事を発信します。
+Quarto で構築した個人ブログ(テンプレート)です。
 
 ## 前提
 - Quarto（最新版）: https://quarto.org
@@ -14,8 +14,8 @@ Quarto で構築した個人ブログです。データサイエンス、プロ�
    - macOS: `brew install --cask r`
 3. リポジトリを取得
    ```bash
-   git clone https://github.com/watanabe3tipapa/quarto-blog.git
-   cd quarto-blog
+   git clone https://github.com/watanabe3tipapa/nb-quarto-blog.git
+   cd nb-quarto-blog
    ```
 
 ## ローカルでプレビュー
@@ -57,4 +57,11 @@ quarto render
 - `freeze: true` により計算結果はキャッシュされます。再実行を避ける運用も可能です。
 
 ## ライセンス
-特に明記がない限り、コンテンツの著作権は著者に帰属します。コード片は引用元のライセンスに従います。
+- MIT
+
+---
+
+
+
+
+
