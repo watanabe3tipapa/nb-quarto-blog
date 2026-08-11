@@ -1,3 +1,7 @@
+---
+date: 2026-08-11
+---
+
 # From NB 
 
 Post TEST -- using nb
