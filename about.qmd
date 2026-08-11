@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: profile.jpg
+image: profile.svg
 about:
   template: jolla
   image-shape: rounded
@@ -8,9 +8,6 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/watanabe3tipapa
-    - icon: x
-      text: X
-      href: https://x.com
     - icon: facebook
       text: Facebook
       href: https://facebook.com
