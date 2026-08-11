@@ -1,22 +1,57 @@
 # nb-quarto-blog
 
-Quarto で構築した個人ブログ(テンプレート)です。
+nb (https://xwmx.github.io/nb/) で管理する個人ブログ(Quarto 製)です。
+
+## 概要
+- このリポジトリは nb のノートブック `nb-quarto-blog` そのものです(Git sync のリモートとして利用)。
+- nb でノートを作成・編集するとコミットされ、push 後は GitHub Actions が Quarto でレンダリングし GitHub Pages へ公開します。
+- ノートは Markdown(`.md`)で保存され、Quarto が `.qmd`/`.md` の両対応です。
+
+## nb (ノート管理ツール)
+- 公式: https://xwmx.github.io/nb/
+- 導入: `brew install xwmx/taps/nb`(macOS / Homebrew)
+
+### ノートブック(このブログ)のセットアップ
+```bash
+# ノートブックをクローンして nb に追加(初回のみ)
+nb notebooks add https://github.com/watanabe3tipapa/nb-quarto-blog.git
+```
+
+### 投稿の作成〜公開フロー
+```bash
+# ノートを追加(エディタが開く)
+nb add
+
+# タイトルと本文を指定して追加
+nb add "記事本文" --title "記事タイトル"
+
+# ノート一覧 / 表示 / 編集
+nb ls
+nb show <id>
+nb edit <id>
+
+# GitHub へ同期(公開トリガー)
+nb git push
+```
+- コミットは CI で `[skip ci]` 付きコミットにより無限ループを回避します。
+- ルート直下の `.md` を置くと CI が `posts/` へ整理・変換します。
 
 ## 前提
 - Quarto（最新版）: https://quarto.org
 - 必要に応じて R（`post-with-code` で `{r}` チャンクを使用）
+- nb: https://xwmx.github.io/nb/（ノート管理・投稿運用）
 - Git / GitHub
 
 ## セットアップ
 1. Quarto のインストール
    - macOS: `brew install --cask quarto`
-2.（必要なら）R のインストール
+2. nb のインストール（投稿運用に使用）
+   - macOS: `brew install xwmx/taps/nb`
+3.（必要なら）R のインストール
    - macOS: `brew install --cask r`
-3. リポジトリを取得
-   ```bash
-   git clone https://github.com/watanabe3tipapa/nb-quarto-blog.git
-   cd nb-quarto-blog
-   ```
+4. リポジトリの取得
+   - nb 利用: `nb notebooks add https://github.com/watanabe3tipapa/nb-quarto-blog.git`（上記参照）
+   - 直接クローン: `git clone https://github.com/watanabe3tipapa/nb-quarto-blog.git`
 
 ## ローカルでプレビュー
 ```bash

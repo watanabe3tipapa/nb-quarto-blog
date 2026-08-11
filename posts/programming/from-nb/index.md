@@ -1,10 +1,9 @@
 ---
-date: 2026-08-11
+date: 2025-11-11
 ---
 
-# From NB 
+# From NB
 
 Post TEST -- using nb
 
 --- 2025-11-11 21:03
-

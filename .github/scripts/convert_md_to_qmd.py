@@ -128,6 +128,9 @@ def main():
         
         total_count += 1
         if convert_md_to_qmd(md_file, qmd_file):
+            # Remove the source .md so .md/.qmd cannot coexist in the same
+            # directory (Quarto fails to render when both resolve to index.html)
+            md_file.unlink()
             converted_count += 1
     
     print(f"\n🎉 Conversion complete: {converted_count}/{total_count} files converted")
@@ -136,7 +139,7 @@ def main():
         print("\n📝 Converted files:")
         for qmd_file in posts_dir.rglob("*.qmd"):
             md_file = qmd_file.with_suffix('.md')
-            if md_file.exists() and qmd_file.stat().st_mtime >= md_file.stat().st_mtime:
+            if not md_file.exists():
                 print(f"   - {qmd_file.relative_to(posts_dir)}")
 
 if __name__ == "__main__":
