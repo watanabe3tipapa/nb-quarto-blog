@@ -22,15 +22,15 @@ Welcome to my blog! I'm passionate about data science, programming, and technolo
 
 ## What I Write About
 
-- **Data Science**: Exploring data analysis, machine learning, and statistical modeling
-- **Programming**: Sharing tips and tricks in R, Python, and other languages
-- **Technology**: Discussing the latest trends and tools in the tech world
-- **Personal Projects**: Showcasing my work and experiments
+-   **Data Science**: Exploring data analysis, machine learning, and statistical modeling
+-   **Programming**: Sharing tips and tricks in R, Python, and other languages
+-   **Technology**: Discussing the latest trends and tools in the tech world
+-   **Personal Projects**: Showcasing my work and experiments
 
 ## Get in Touch
 
 I'd love to hear from you! Feel free to reach out through any of the platforms linked above, or leave a comment on any of my posts.
 
----
+------------------------------------------------------------------------
 
 *Built with [Quarto](https://quarto.org/)*

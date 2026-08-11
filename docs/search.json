@@ -1,122 +1,24 @@
 [
   {
-    "objectID": "from-nb.html",
-    "href": "from-nb.html",
-    "title": "From NB",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "From NB\nPost TEST – using nb\n— 2025-11-11 20:49"
+    "text": "Welcome to my blog! I’m passionate about data science, programming, and technology. This blog serves as a platform to share my thoughts, projects, and learnings with the community.\n\n\n\nData Science: Exploring data analysis, machine learning, and statistical modeling\nProgramming: Sharing tips and tricks in R, Python, and other languages\nTechnology: Discussing the latest trends and tools in the tech world\nPersonal Projects: Showcasing my work and experiments\n\n\n\n\nI’d love to hear from you! Feel free to reach out through any of the platforms linked above, or leave a comment on any of my posts.\n\nBuilt with Quarto"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To Quarto Blog",
+    "objectID": "about.html#what-i-write-about",
+    "href": "about.html#what-i-write-about",
+    "title": "About",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Data Science: Exploring data analysis, machine learning, and statistical modeling\nProgramming: Sharing tips and tricks in R, Python, and other languages\nTechnology: Discussing the latest trends and tools in the tech world\nPersonal Projects: Showcasing my work and experiments"
   },
   {
-    "objectID": "posts/data-visualization/index.html",
-    "href": "posts/data-visualization/index.html",
-    "title": "Getting Started with Data Visualization",
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About",
     "section": "",
-    "text": "Data visualization is a powerful tool for understanding complex data and communicating insights effectively. In this post, we’ll explore some fundamental concepts and techniques.\n\n\nVisual representations of data help us:\n\nIdentify patterns and trends quickly\nCommunicate complex information clearly\nMake data-driven decisions\nTell compelling stories with data\n\n\n\n\n\n\nGreat for comparing quantities across different categories.\n\n\n\nPerfect for showing trends over time.\n\n\n\nExcellent for exploring relationships between variables.\n\n\n\n\n\nChoose the right chart type for your data and message\nKeep it simple - avoid unnecessary decorations\nUse color effectively - don’t rely on color alone\nLabel clearly - axes, titles, and legends should be informative\nConsider accessibility - ensure your visualizations are readable by everyone\n\n\n\n\n\nR: ggplot2, plotly, shiny\nPython: matplotlib, seaborn, plotly\nJavaScript: D3.js, Chart.js\nWeb-based: Tableau, Power BI, Google Data Studio\n\n\n\n\nEffective data visualization combines technical skills with storytelling ability. Practice regularly and learn from examples to improve your visualization skills.\n\nWhat are your favorite data visualization tools? Share in the comments below!"
-  },
-  {
-    "objectID": "posts/data-visualization/index.html#why-data-visualization-matters",
-    "href": "posts/data-visualization/index.html#why-data-visualization-matters",
-    "title": "Getting Started with Data Visualization",
-    "section": "",
-    "text": "Visual representations of data help us:\n\nIdentify patterns and trends quickly\nCommunicate complex information clearly\nMake data-driven decisions\nTell compelling stories with data"
-  },
-  {
-    "objectID": "posts/data-visualization/index.html#common-chart-types",
-    "href": "posts/data-visualization/index.html#common-chart-types",
-    "title": "Getting Started with Data Visualization",
-    "section": "",
-    "text": "Great for comparing quantities across different categories.\n\n\n\nPerfect for showing trends over time.\n\n\n\nExcellent for exploring relationships between variables."
-  },
-  {
-    "objectID": "posts/data-visualization/index.html#best-practices",
-    "href": "posts/data-visualization/index.html#best-practices",
-    "title": "Getting Started with Data Visualization",
-    "section": "",
-    "text": "Choose the right chart type for your data and message\nKeep it simple - avoid unnecessary decorations\nUse color effectively - don’t rely on color alone\nLabel clearly - axes, titles, and legends should be informative\nConsider accessibility - ensure your visualizations are readable by everyone"
-  },
-  {
-    "objectID": "posts/data-visualization/index.html#tools-for-data-visualization",
-    "href": "posts/data-visualization/index.html#tools-for-data-visualization",
-    "title": "Getting Started with Data Visualization",
-    "section": "",
-    "text": "R: ggplot2, plotly, shiny\nPython: matplotlib, seaborn, plotly\nJavaScript: D3.js, Chart.js\nWeb-based: Tableau, Power BI, Google Data Studio"
-  },
-  {
-    "objectID": "posts/data-visualization/index.html#conclusion",
-    "href": "posts/data-visualization/index.html#conclusion",
-    "title": "Getting Started with Data Visualization",
-    "section": "",
-    "text": "Effective data visualization combines technical skills with storytelling ability. Practice regularly and learn from examples to improve your visualization skills.\n\nWhat are your favorite data visualization tools? Share in the comments below!"
-  },
-  {
-    "objectID": "posts/programming/getting-started-with-web-development/index.html",
-    "href": "posts/programming/getting-started-with-web-development/index.html",
-    "title": "Getting Started with Web Development",
-    "section": "",
-    "text": "Web development is an exciting field that combines creativity with technical skills. This guide will help you understand the fundamentals and get started on your journey.\n\n\nWeb development involves creating websites and web applications. It’s typically divided into two main areas:\n\n\n\nHTML: Structure and content\nCSS: Styling and layout\nJavaScript: Interactivity and dynamic behavior\n\n\n\n\n\nServer-side languages: Python, Ruby, PHP, Node.js\nDatabases: MySQL, PostgreSQL, MongoDB\nAPIs: Connecting frontend and backend\n\n\n\n\n\n\nCode Editor: Visual Studio Code, Sublime Text, or Atom\nBrowser Developer Tools: Built into Chrome, Firefox, Safari\nVersion Control: Git and GitHub\nDesign Tools: Figma, Adobe XD (for UI/UX)\n\n\n\n\n\n\nStart with the basics of structure and styling. Practice building simple static websites.\n\n\n\nLearn how to make your websites interactive and dynamic.\n\n\n\nOnce comfortable with basics, explore frameworks like React, Vue, or Angular.\n\n\n\nLearn about server-side programming and databases.\n\n\n\n\n\nWrite clean, semantic HTML\nUse responsive design for mobile compatibility\nOptimize for performance and accessibility\nFollow web standards and guidelines\n\n\n\n\n\nDocumentation: MDN Web Docs, W3Schools\nCourses: freeCodeCamp, Codecademy, Coursera\nCommunities: Stack Overflow, Reddit r/webdev\n\n\n\n\nWeb development is a continuously evolving field. Start with the fundamentals, build projects, and never stop learning. The key is practice and persistence.\nRemember: every expert was once a beginner. Take it one step at a time and enjoy the process of creating amazing web experiences!\n#webdevelopment #html #css #javascript #tutorial"
-  },
-  {
-    "objectID": "posts/programming/getting-started-with-web-development/index.html#what-is-web-development",
-    "href": "posts/programming/getting-started-with-web-development/index.html#what-is-web-development",
-    "title": "Getting Started with Web Development",
-    "section": "",
-    "text": "Web development involves creating websites and web applications. It’s typically divided into two main areas:\n\n\n\nHTML: Structure and content\nCSS: Styling and layout\nJavaScript: Interactivity and dynamic behavior\n\n\n\n\n\nServer-side languages: Python, Ruby, PHP, Node.js\nDatabases: MySQL, PostgreSQL, MongoDB\nAPIs: Connecting frontend and backend"
-  },
-  {
-    "objectID": "posts/programming/getting-started-with-web-development/index.html#essential-tools-for-beginners",
-    "href": "posts/programming/getting-started-with-web-development/index.html#essential-tools-for-beginners",
-    "title": "Getting Started with Web Development",
-    "section": "",
-    "text": "Code Editor: Visual Studio Code, Sublime Text, or Atom\nBrowser Developer Tools: Built into Chrome, Firefox, Safari\nVersion Control: Git and GitHub\nDesign Tools: Figma, Adobe XD (for UI/UX)"
-  },
-  {
-    "objectID": "posts/programming/getting-started-with-web-development/index.html#learning-path",
-    "href": "posts/programming/getting-started-with-web-development/index.html#learning-path",
-    "title": "Getting Started with Web Development",
-    "section": "",
-    "text": "Start with the basics of structure and styling. Practice building simple static websites.\n\n\n\nLearn how to make your websites interactive and dynamic.\n\n\n\nOnce comfortable with basics, explore frameworks like React, Vue, or Angular.\n\n\n\nLearn about server-side programming and databases."
-  },
-  {
-    "objectID": "posts/programming/getting-started-with-web-development/index.html#best-practices",
-    "href": "posts/programming/getting-started-with-web-development/index.html#best-practices",
-    "title": "Getting Started with Web Development",
-    "section": "",
-    "text": "Write clean, semantic HTML\nUse responsive design for mobile compatibility\nOptimize for performance and accessibility\nFollow web standards and guidelines"
-  },
-  {
-    "objectID": "posts/programming/getting-started-with-web-development/index.html#resources",
-    "href": "posts/programming/getting-started-with-web-development/index.html#resources",
-    "title": "Getting Started with Web Development",
-    "section": "",
-    "text": "Documentation: MDN Web Docs, W3Schools\nCourses: freeCodeCamp, Codecademy, Coursera\nCommunities: Stack Overflow, Reddit r/webdev"
-  },
-  {
-    "objectID": "posts/programming/getting-started-with-web-development/index.html#conclusion",
-    "href": "posts/programming/getting-started-with-web-development/index.html#conclusion",
-    "title": "Getting Started with Web Development",
-    "section": "",
-    "text": "Web development is a continuously evolving field. Start with the fundamentals, build projects, and never stop learning. The key is practice and persistence.\nRemember: every expert was once a beginner. Take it one step at a time and enjoy the process of creating amazing web experiences!\n#webdevelopment #html #css #javascript #tutorial"
-  },
-  {
-    "objectID": "posts/programming/test-quarto-blog/index.html",
-    "href": "posts/programming/test-quarto-blog/index.html",
-    "title": "test - Quarto-blog",
-    "section": "",
-    "text": "test - Quarto-blog"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "nb-quarto-blog",
-    "section": "",
-    "text": "Python Tips and Tricks for Better Code\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\ndate: 2025-11-11\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFrom NB\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Web Development\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Data Visualization\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\ndate: 2025-11-11\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To Quarto Blog\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\nNo matching items"
+    "text": "I’d love to hear from you! Feel free to reach out through any of the platforms linked above, or leave a comment on any of my posts.\n\nBuilt with Quarto"
   },
   {
     "objectID": "posts/python-tips/index.html",
@@ -203,18 +105,53 @@
     "text": "These Python tips can help you write more concise, readable, and efficient code. The key is to balance cleverness with clarity - your code should be easy to understand for others (and your future self!).\n\nWhat are your favorite Python tips? Share them in the comments!"
   },
   {
-    "objectID": "posts/programming/from-nb/index.html",
-    "href": "posts/programming/from-nb/index.html",
-    "title": "From NB",
+    "objectID": "posts/programming/getting-started-with-web-development/index.html",
+    "href": "posts/programming/getting-started-with-web-development/index.html",
+    "title": "Getting Started with Web Development",
     "section": "",
-    "text": "From NB\nPost TEST – using nb\n— 2025-11-11 20:49"
+    "text": "Web development is an exciting field that combines creativity with technical skills. This guide will help you understand the fundamentals and get started on your journey.\n\n\nWeb development involves creating websites and web applications. It’s typically divided into two main areas:\n\n\n\nHTML: Structure and content\nCSS: Styling and layout\nJavaScript: Interactivity and dynamic behavior\n\n\n\n\n\nServer-side languages: Python, Ruby, PHP, Node.js\nDatabases: MySQL, PostgreSQL, MongoDB\nAPIs: Connecting frontend and backend\n\n\n\n\n\n\nCode Editor: Visual Studio Code, Sublime Text, or Atom\nBrowser Developer Tools: Built into Chrome, Firefox, Safari\nVersion Control: Git and GitHub\nDesign Tools: Figma, Adobe XD (for UI/UX)\n\n\n\n\n\n\nStart with the basics of structure and styling. Practice building simple static websites.\n\n\n\nLearn how to make your websites interactive and dynamic.\n\n\n\nOnce comfortable with basics, explore frameworks like React, Vue, or Angular.\n\n\n\nLearn about server-side programming and databases.\n\n\n\n\n\nWrite clean, semantic HTML\nUse responsive design for mobile compatibility\nOptimize for performance and accessibility\nFollow web standards and guidelines\n\n\n\n\n\nDocumentation: MDN Web Docs, W3Schools\nCourses: freeCodeCamp, Codecademy, Coursera\nCommunities: Stack Overflow, Reddit r/webdev\n\n\n\n\nWeb development is a continuously evolving field. Start with the fundamentals, build projects, and never stop learning. The key is practice and persistence.\nRemember: every expert was once a beginner. Take it one step at a time and enjoy the process of creating amazing web experiences!\n#webdevelopment #html #css #javascript #tutorial"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/programming/getting-started-with-web-development/index.html#what-is-web-development",
+    "href": "posts/programming/getting-started-with-web-development/index.html#what-is-web-development",
+    "title": "Getting Started with Web Development",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "Web development involves creating websites and web applications. It’s typically divided into two main areas:\n\n\n\nHTML: Structure and content\nCSS: Styling and layout\nJavaScript: Interactivity and dynamic behavior\n\n\n\n\n\nServer-side languages: Python, Ruby, PHP, Node.js\nDatabases: MySQL, PostgreSQL, MongoDB\nAPIs: Connecting frontend and backend"
+  },
+  {
+    "objectID": "posts/programming/getting-started-with-web-development/index.html#essential-tools-for-beginners",
+    "href": "posts/programming/getting-started-with-web-development/index.html#essential-tools-for-beginners",
+    "title": "Getting Started with Web Development",
+    "section": "",
+    "text": "Code Editor: Visual Studio Code, Sublime Text, or Atom\nBrowser Developer Tools: Built into Chrome, Firefox, Safari\nVersion Control: Git and GitHub\nDesign Tools: Figma, Adobe XD (for UI/UX)"
+  },
+  {
+    "objectID": "posts/programming/getting-started-with-web-development/index.html#learning-path",
+    "href": "posts/programming/getting-started-with-web-development/index.html#learning-path",
+    "title": "Getting Started with Web Development",
+    "section": "",
+    "text": "Start with the basics of structure and styling. Practice building simple static websites.\n\n\n\nLearn how to make your websites interactive and dynamic.\n\n\n\nOnce comfortable with basics, explore frameworks like React, Vue, or Angular.\n\n\n\nLearn about server-side programming and databases."
+  },
+  {
+    "objectID": "posts/programming/getting-started-with-web-development/index.html#best-practices",
+    "href": "posts/programming/getting-started-with-web-development/index.html#best-practices",
+    "title": "Getting Started with Web Development",
+    "section": "",
+    "text": "Write clean, semantic HTML\nUse responsive design for mobile compatibility\nOptimize for performance and accessibility\nFollow web standards and guidelines"
+  },
+  {
+    "objectID": "posts/programming/getting-started-with-web-development/index.html#resources",
+    "href": "posts/programming/getting-started-with-web-development/index.html#resources",
+    "title": "Getting Started with Web Development",
+    "section": "",
+    "text": "Documentation: MDN Web Docs, W3Schools\nCourses: freeCodeCamp, Codecademy, Coursera\nCommunities: Stack Overflow, Reddit r/webdev"
+  },
+  {
+    "objectID": "posts/programming/getting-started-with-web-development/index.html#conclusion",
+    "href": "posts/programming/getting-started-with-web-development/index.html#conclusion",
+    "title": "Getting Started with Web Development",
+    "section": "",
+    "text": "Web development is a continuously evolving field. Start with the fundamentals, build projects, and never stop learning. The key is practice and persistence.\nRemember: every expert was once a beginner. Take it one step at a time and enjoy the process of creating amazing web experiences!\n#webdevelopment #html #css #javascript #tutorial"
   },
   {
     "objectID": "posts/blog/test-post/index.html",
@@ -224,24 +161,80 @@
     "text": "TEST POST"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/data-visualization/index.html",
+    "href": "posts/data-visualization/index.html",
+    "title": "Getting Started with Data Visualization",
     "section": "",
-    "text": "Welcome to my blog! I’m passionate about data science, programming, and technology. This blog serves as a platform to share my thoughts, projects, and learnings with the community.\n\n\n\nData Science: Exploring data analysis, machine learning, and statistical modeling\nProgramming: Sharing tips and tricks in R, Python, and other languages\nTechnology: Discussing the latest trends and tools in the tech world\nPersonal Projects: Showcasing my work and experiments\n\n\n\n\nI’d love to hear from you! Feel free to reach out through any of the platforms linked above, or leave a comment on any of my posts.\n\nBuilt with Quarto"
+    "text": "Data visualization is a powerful tool for understanding complex data and communicating insights effectively. In this post, we’ll explore some fundamental concepts and techniques.\n\n\nVisual representations of data help us:\n\nIdentify patterns and trends quickly\nCommunicate complex information clearly\nMake data-driven decisions\nTell compelling stories with data\n\n\n\n\n\n\nGreat for comparing quantities across different categories.\n\n\n\nPerfect for showing trends over time.\n\n\n\nExcellent for exploring relationships between variables.\n\n\n\n\n\nChoose the right chart type for your data and message\nKeep it simple - avoid unnecessary decorations\nUse color effectively - don’t rely on color alone\nLabel clearly - axes, titles, and legends should be informative\nConsider accessibility - ensure your visualizations are readable by everyone\n\n\n\n\n\nR: ggplot2, plotly, shiny\nPython: matplotlib, seaborn, plotly\nJavaScript: D3.js, Chart.js\nWeb-based: Tableau, Power BI, Google Data Studio\n\n\n\n\nEffective data visualization combines technical skills with storytelling ability. Practice regularly and learn from examples to improve your visualization skills.\n\nWhat are your favorite data visualization tools? Share in the comments below!"
   },
   {
-    "objectID": "about.html#what-i-write-about",
-    "href": "about.html#what-i-write-about",
-    "title": "About",
+    "objectID": "posts/data-visualization/index.html#why-data-visualization-matters",
+    "href": "posts/data-visualization/index.html#why-data-visualization-matters",
+    "title": "Getting Started with Data Visualization",
     "section": "",
-    "text": "Data Science: Exploring data analysis, machine learning, and statistical modeling\nProgramming: Sharing tips and tricks in R, Python, and other languages\nTechnology: Discussing the latest trends and tools in the tech world\nPersonal Projects: Showcasing my work and experiments"
+    "text": "Visual representations of data help us:\n\nIdentify patterns and trends quickly\nCommunicate complex information clearly\nMake data-driven decisions\nTell compelling stories with data"
   },
   {
-    "objectID": "about.html#get-in-touch",
-    "href": "about.html#get-in-touch",
-    "title": "About",
+    "objectID": "posts/data-visualization/index.html#common-chart-types",
+    "href": "posts/data-visualization/index.html#common-chart-types",
+    "title": "Getting Started with Data Visualization",
     "section": "",
-    "text": "I’d love to hear from you! Feel free to reach out through any of the platforms linked above, or leave a comment on any of my posts.\n\nBuilt with Quarto"
+    "text": "Great for comparing quantities across different categories.\n\n\n\nPerfect for showing trends over time.\n\n\n\nExcellent for exploring relationships between variables."
+  },
+  {
+    "objectID": "posts/data-visualization/index.html#best-practices",
+    "href": "posts/data-visualization/index.html#best-practices",
+    "title": "Getting Started with Data Visualization",
+    "section": "",
+    "text": "Choose the right chart type for your data and message\nKeep it simple - avoid unnecessary decorations\nUse color effectively - don’t rely on color alone\nLabel clearly - axes, titles, and legends should be informative\nConsider accessibility - ensure your visualizations are readable by everyone"
+  },
+  {
+    "objectID": "posts/data-visualization/index.html#tools-for-data-visualization",
+    "href": "posts/data-visualization/index.html#tools-for-data-visualization",
+    "title": "Getting Started with Data Visualization",
+    "section": "",
+    "text": "R: ggplot2, plotly, shiny\nPython: matplotlib, seaborn, plotly\nJavaScript: D3.js, Chart.js\nWeb-based: Tableau, Power BI, Google Data Studio"
+  },
+  {
+    "objectID": "posts/data-visualization/index.html#conclusion",
+    "href": "posts/data-visualization/index.html#conclusion",
+    "title": "Getting Started with Data Visualization",
+    "section": "",
+    "text": "Effective data visualization combines technical skills with storytelling ability. Practice regularly and learn from examples to improve your visualization skills.\n\nWhat are your favorite data visualization tools? Share in the comments below!"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To Quarto Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/programming/from-nb/index.html",
+    "href": "posts/programming/from-nb/index.html",
+    "title": "From NB",
+    "section": "",
+    "text": "From NB\nPost TEST – using nb\n— 2025-11-11 21:03"
+  },
+  {
+    "objectID": "posts/programming/test-quarto-blog/index.html",
+    "href": "posts/programming/test-quarto-blog/index.html",
+    "title": "test - Quarto-blog",
+    "section": "",
+    "text": "test - Quarto-blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nb-quarto-blog",
+    "section": "",
+    "text": "From NB\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTEST POST\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Web Development\n\n\n\nwebdevelopment\n\nhtml\n\ncss\n\njavascript\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\ndate: 2025-11-11\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPython Tips and Tricks for Better Code\n\n\n\npython\n\nprogramming\n\ntips\n\n\n\n\n\n\n\n\n\nNov 11, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Data Visualization\n\n\n\ndata-science\n\nvisualization\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 10, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nNov 9, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To Quarto Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nNov 9, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\nNo matching items"
   }
 ]

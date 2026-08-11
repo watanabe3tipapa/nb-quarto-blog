@@ -1,1 +1,1 @@
-Sitemap: https://watanabe3tipapa.github.io/quarto-blog/sitemap.xml
+Sitemap: https://watanabe3tipapa.github.io/nb-quarto-blog/sitemap.xml

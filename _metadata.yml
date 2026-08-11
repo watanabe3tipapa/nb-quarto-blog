@@ -1,6 +1,6 @@
 website:
   description: "A blog about data science, programming, and technology by watanabe3tipapa"
-  site-url: "https://watanabe3tipapa.github.io/quarto-blog"
+  site-url: "https://watanabe3tipapa.github.io/nb-quarto-blog"
   open-graph: true
   twitter-card: 
     site: "@watanabe3tipapa"

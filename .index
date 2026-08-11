@@ -4,9 +4,9 @@ _quarto.yml
 _site
 about.qmd
 docs
-github
+
 index.qmd
 posts
 README.md
 styles.css
-from-nb.md
+
