@@ -1,5 +1,0 @@
----
-date: 2025-11-11
----
-
-# test - Quarto-blog

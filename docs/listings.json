@@ -2,8 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/programming/from-nb/index.html",
       "/posts/blog/test-post/index.html",
+      "/posts/programming/from-nb/index.html",
       "/posts/programming/getting-started-with-web-development/index.html",
       "/posts/programming/test-quarto-blog/index.html",
       "/posts/python-tips/index.html",
