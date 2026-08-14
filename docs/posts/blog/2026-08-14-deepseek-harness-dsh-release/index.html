@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="watanabe3tipapa">
+<meta name="dcterms.date" content="2026-08-14">
 
-<title>nb-quarto-blog – NB Quarto Blog</title>
+<title>DeepSeek Harness (DSH)のリリースについて – NB Quarto Blog</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +28,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4d3f3448f837ff03356db176d8adb603.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-4d3f3448f837ff03356db176d8adb603.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,71 +72,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="nb-quarto-blog – NB Quarto Blog">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="DeepSeek Harness (DSH)のリリースについて – NB Quarto Blog">
+<meta property="og:description" content="A blog about data science, programming, and technology by watanabe3tipapa">
 <meta property="og:image" content="https://watanabe3tipapa.github.io/nb-quarto-blog/posts/blog/2026-08-14-deepseek-harness-dsh-release/eyecatch.svg">
 <meta property="og:site_name" content="NB Quarto Blog">
-<meta name="twitter:title" content="nb-quarto-blog – NB Quarto Blog">
+<meta name="twitter:title" content="DeepSeek Harness (DSH)のリリースについて – NB Quarto Blog">
+<meta name="twitter:description" content="A blog about data science, programming, and technology by watanabe3tipapa">
 <meta name="twitter:image" content="https://watanabe3tipapa.github.io/nb-quarto-blog/posts/blog/2026-08-14-deepseek-harness-dsh-release/eyecatch.svg">
 <meta name="twitter:creator" content="@watanabe3tipapa">
 <meta name="twitter:site" content="@watanabe3tipapa">
@@ -150,7 +94,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">NB Quarto Blog</span>
     </a>
   </div>
@@ -161,7 +105,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -179,346 +123,115 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">nb-quarto-blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">DeepSeek Harness (DSH)のリリースについて</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">blog</div>
+                <div class="quarto-category">ai</div>
+                <div class="quarto-category">deepseek</div>
+                <div class="quarto-category">agent</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>watanabe3tipapa </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 14, 2026</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="YWdlbnQ=">agent <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YWk=">ai <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmxvZw==">blog <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y3Nz">css <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YS1zY2llbmNl">data-science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVlcHNlZWs=">deepseek <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aHRtbA==">html <span class="quarto-category-count">(1)</span></div><div class="category" data-category="amF2YXNjcmlwdA==">javascript <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cHJvZ3JhbW1pbmc=">programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHl0aG9u">python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGlwcw==">tips <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHV0b3JpYWw=">tutorial <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dmlzdWFsaXphdGlvbg==">visualization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2ViZGV2ZWxvcG1lbnQ=">webdevelopment <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#主な特徴" id="toc-主な特徴" class="nav-link active" data-scroll-target="#主な特徴">主な特徴</a></li>
+  <li><a href="#使用方法概要" id="toc-使用方法概要" class="nav-link" data-scroll-target="#使用方法概要">使用方法（概要）</a></li>
+  <li><a href="#開発拡張" id="toc-開発拡張" class="nav-link" data-scroll-target="#開発拡張">開発・拡張</a></li>
+  <li><a href="#quarto-.qmd-との親和性" id="toc-quarto-.qmd-との親和性" class="nav-link" data-scroll-target="#quarto-.qmd-との親和性">Quarto (.qmd) との親和性</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/watanabe3tipapa/nb-quarto-blog/edit/main/posts/blog/2026-08-14-deepseek-harness-dsh-release/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/watanabe3tipapa/nb-quarto-blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YmxvZyUyQ2FpJTJDZGVlcHNlZWslMkNhZ2VudA==" data-listing-date-sort="1786633200000" data-listing-file-modified-sort="1786716227052" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
-<div class="thumbnail"><a href="./posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/blog/2026-08-14-deepseek-harness-dsh-release/eyecatch.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html" class="no-external">DeepSeek Harness (DSH)のリリースについて</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWk='); return false;">ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGVlcHNlZWs='); return false;">deepseek</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWdlbnQ='); return false;">agent</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html" class="no-external">
-<strong>DeepSeek Harness (DSH)</strong> は、DeepSeek が提供するプラグインベースのエージェントフレームワークです。
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html" class="no-external">
-<div class="listing-date">
-Aug 14, 2026
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="YmxvZw==" data-listing-date-sort="1762786800000" data-listing-file-modified-sort="1786453190126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/blog/test-post/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/blog/test-post/index.html" class="no-external">TEST POST</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/blog/test-post/index.html" class="no-external">
-
-
-
-
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/blog/test-post/index.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2025
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="YmxvZw==" data-listing-date-sort="1762786800000" data-listing-file-modified-sort="1786453190127" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail"><a href="./posts/programming/from-nb/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/programming/from-nb/index.html" class="no-external">From NB</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/programming/from-nb/index.html" class="no-external">
-Post TEST – using nb
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/programming/from-nb/index.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2025
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="d2ViZGV2ZWxvcG1lbnQlMkNodG1sJTJDY3NzJTJDamF2YXNjcmlwdCUyQ3R1dG9yaWFs" data-listing-date-sort="1762786800000" data-listing-file-modified-sort="1762853306080" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
-<div class="thumbnail"><a href="./posts/programming/getting-started-with-web-development/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/programming/getting-started-with-web-development/index.html" class="no-external">Getting Started with Web Development</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2ViZGV2ZWxvcG1lbnQ='); return false;">webdevelopment</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('aHRtbA=='); return false;">html</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y3Nz'); return false;">css</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('amF2YXNjcmlwdA=='); return false;">javascript</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHV0b3JpYWw='); return false;">tutorial</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/programming/getting-started-with-web-development/index.html" class="no-external">
-Web development is an exciting field that combines creativity with technical skills. This guide will help you understand the fundamentals and get started on your journey.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/programming/getting-started-with-web-development/index.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2025
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="YmxvZw==" data-listing-date-sort="1762786800000" data-listing-file-modified-sort="1786453190127" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/programming/test-quarto-blog/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/programming/test-quarto-blog/index.html" class="no-external">test - Quarto-blog</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmxvZw=='); return false;">blog</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/programming/test-quarto-blog/index.html" class="no-external">
-
-
-
-
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/programming/test-quarto-blog/index.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2025
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="cHl0aG9uJTJDcHJvZ3JhbW1pbmclMkN0aXBz" data-listing-date-sort="1731250800000" data-listing-file-modified-sort="1762852772558" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
-<div class="thumbnail"><a href="./posts/python-tips/index.html" class="no-external">
-
-<img loading="lazy" src="https://via.placeholder.com/800x400/3776ab/ffffff?text=Python+Tips" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/python-tips/index.html" class="no-external">Python Tips and Tricks for Better Code</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvZ3JhbW1pbmc='); return false;">programming</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGlwcw=='); return false;">tips</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/python-tips/index.html" class="no-external">
-Python is known for its readability and simplicity, but there are many features and techniques that can make your code even more elegant and efficient. Here are some of my…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/python-tips/index.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2024
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="ZGF0YS1zY2llbmNlJTJDdmlzdWFsaXphdGlvbiUyQ3R1dG9yaWFs" data-listing-date-sort="1731164400000" data-listing-file-modified-sort="1762852747470" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="179">
-<div class="thumbnail"><a href="./posts/data-visualization/index.html" class="no-external">
-
-<img loading="lazy" src="https://via.placeholder.com/800x400/0366d6/ffffff?text=Data+Visualization" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/data-visualization/index.html" class="no-external">Getting Started with Data Visualization</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YS1zY2llbmNl'); return false;">data-science</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dmlzdWFsaXphdGlvbg=='); return false;">visualization</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHV0b3JpYWw='); return false;">tutorial</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/data-visualization/index.html" class="no-external">
-Data visualization is a powerful tool for understanding complex data and communicating insights effectively. In this post, we’ll explore some fundamental concepts and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/data-visualization/index.html" class="no-external">
-<div class="listing-date">
-Nov 10, 2024
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1731078000000" data-listing-file-modified-sort="1731502751305" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail"><a href="./posts/post-with-code/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/post-with-code/index.html" class="no-external">
-This is a post with executable code.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Nov 9, 2024
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="bmV3cw==" data-listing-date-sort="1731078000000" data-listing-file-modified-sort="1731502684319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail"><a href="./posts/welcome/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To Quarto Blog</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/welcome/index.html" class="no-external">
-This is the first post in a Quarto blog. Welcome!
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Nov 9, 2024
-</div>
-<div class="listing-author">
-watanabe3tipapa
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><strong>DeepSeek Harness (DSH)</strong> は、DeepSeek が提供するプラグインベースのエージェントフレームワークです。</p>
+<ul>
+<li>すべての機能が <em>plugin</em> として実装されており、Cordis という内部ランタイム上で動作します。</li>
+<li><code>packages/</code> 配下に <strong>core, api, llm, shell, web など</strong> 13 種類のモジュールがあり、各モジュールがモデル呼び出し・ツール連携・ファイル操作などの役割を担います。</li>
+<li>モデルやプロバイダーは <strong>Settings → Models</strong> で API キーを登録すればすぐに利用可能で、サーバー再起動は不要です。</li>
+</ul>
+<section id="主な特徴" class="level2">
+<h2 class="anchored" data-anchor-id="主な特徴">主な特徴</h2>
+<ul>
+<li><p><strong>任意の LLM・プロバイダーと組み合わせられる</strong></p>
+<p>DeepSeek だけでなく、OpenAI、Anthropic、Azure など 30 以上のプロバイダーに対応し、役割ごとに異なるモデルを割り当てられます。</p></li>
+<li><p><strong>プラグインエコシステム</strong></p>
+<p><code>dsh-vision</code>, <code>dsh-pdf</code>, <code>dsh-weather</code> など、ツールや UI 拡張のプラグインが多数用意されており、<code>plugin-registry</code> で簡単に追加・管理できます。</p></li>
+<li><p><strong>安全な実行環境</strong></p>
+<p>コマンド実行はサンドボックス化され、プランモードではファイル変更を行わず、承認が必要な操作は UI が確認ダイアログを出します。</p></li>
+<li><p><strong>永続的セッションと履歴</strong></p>
+<p>各タスクは <strong>append-only ledger</strong> に記録され、<code>fleet resume</code> で途中から再開可能です。</p></li>
+</ul>
+</section>
+<section id="使用方法概要" class="level2">
+<h2 class="anchored" data-anchor-id="使用方法概要">使用方法（概要）</h2>
+<ol type="1">
+<li><strong>Web UI 起動</strong> – ルート README の指示で <code>dsh</code> を起動し、表示された URL にアクセス。</li>
+<li><strong>モデル設定</strong> – Settings → Models で DeepSeek などの API キーを入力。</li>
+<li><strong>ワークスペース選択</strong> – プロジェクトディレクトリを選んでファイル操作対象を決定。</li>
+<li><strong>タスク実行</strong> – チャットウィンドウに「リポジトリを要約して主要パッケージを列挙してください」のように指示すると、エージェントがコードを読み、必要に応じてコマンドを走らせて結果を返します。</li>
+</ol>
+</section>
+<section id="開発拡張" class="level2">
+<h2 class="anchored" data-anchor-id="開発拡張">開発・拡張</h2>
+<ul>
+<li>新しいプラグインは <code>packages/</code> に <strong>ESM</strong> 形式で追加し、<code>ctx.effect()</code> / <code>ctx.on()</code> で登録。</li>
+<li><code>vendor/</code> ディレクトリに外部依存（Cordis など）のソースコードがピン留めされ、<code>vendor/README.md</code> の手順で更新できます。</li>
+</ul>
+<p>DeepSeek Harness は、<strong>「好きなモデルで好きな作業を自動化」</strong> できるオープンソースのエージェント基盤として、CLI、Web UI、VS Code など多様なクライアントから利用可能です。</p>
+</section>
+<section id="quarto-.qmd-との親和性" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-.qmd-との親和性">Quarto (.qmd) との親和性</h2>
+<p><code>.qmd</code>（Quarto Markdown）ファイルは DeepSeek Harness のテキスト処理エンジンと相性が良いです。</p>
+<ul>
+<li><p><strong>プラグインで直接扱える</strong></p>
+<p>DeepSeek Harness では「ファイル操作」プラグインが標準で提供されており、任意のテキストファイルを <strong>読み込み・書き換え・保存</strong> できます。<code>.qmd</code> はプレーンテキストなので、プラグインにパスを渡すだけで内容を取得し、内容の要約や構造解析、コードブロック抽出などのタスクを実行できます。</p></li>
+<li><p><strong>コードブロックと実行結果の統合</strong></p>
+<p>Quarto のコードチャンク（<code>{r}</code>、<code>{python}</code> など）はプレーンテキストとして認識されるため、<strong>LLM にコード実行指示を出す際</strong>にそのまま送信でき、実行結果を再び <code>.qmd</code> に埋め込むフローがシームレスです。</p></li>
+<li><p><strong>CI/CD パイプラインでの自動化</strong></p>
+<p>Harness の <strong>CLI</strong> から <code>dsh run &lt;task&gt;</code> を呼び出すだけで、<code>.qmd</code> を対象に自動要約・目次生成・画像キャプション付与といったバッチ処理が可能です。これにより、Quarto プロジェクトのビルド前に AI がコンテンツを最適化できます。</p></li>
+<li><p><strong>拡張プラグインの作成</strong></p>
+<p>必要なら <strong>独自プラグイン</strong>（例: <code>dsh-quarto</code>）を作り、Quarto のメタデータ（YAML front-matter）を解析して、ドキュメント構造をモデルに渡すことも容易です。プラグインは <code>packages/</code> に追加し、<code>ctx.effect()</code> でフックすれば即座に利用できます。</p></li>
+</ul>
+<p><strong>結論</strong>: <code>.qmd</code> は単なるテキストファイルであるため、DeepSeek Harness のファイル操作やコード実行プラグインと自然に連携でき、Quarto ドキュメントの自動処理・最適化に有効です。</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -927,7 +640,7 @@ watanabe3tipapa
     </div>   
     <div class="nav-footer-center">
 <p>© 2024 watanabe3tipapa. Built with <a href="https://quarto.org/">Quarto</a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/watanabe3tipapa/nb-quarto-blog/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/watanabe3tipapa/nb-quarto-blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/watanabe3tipapa/nb-quarto-blog/edit/main/posts/blog/2026-08-14-deepseek-harness-dsh-release/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/watanabe3tipapa/nb-quarto-blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

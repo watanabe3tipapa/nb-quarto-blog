@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d1a"/>
+      <stop offset="55%" stop-color="#1a1a3a"/>
+      <stop offset="100%" stop-color="#24324f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4d6bfe"/>
+      <stop offset="100%" stop-color="#6f86d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="150" cy="110" r="220" fill="url(#accent)" opacity="0.22"/>
+  <circle cx="1080" cy="540" r="280" fill="url(#accent)" opacity="0.16"/>
+  <circle cx="1080" cy="540" r="160" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.5"/>
+  <circle cx="1080" cy="540" r="120" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.35"/>
+  <text x="120" y="330" font-family="SF Mono, Menlo, Monaco, monospace" font-size="120" font-weight="700" fill="url(#accent)">DSH</text>
+  <text x="120" y="390" font-family="SF Mono, Menlo, Monaco, monospace" font-size="34" fill="#c8d6e5" letter-spacing="4">DEEPSEEK HARNESS</text>
+  <text x="120" y="435" font-family="SF Mono, Menlo, Monaco, monospace" font-size="24" fill="#8a9bb5" letter-spacing="2">PLUGIN-BASED AGENT FRAMEWORK</text>
+  <line x1="120" y1="480" x2="560" y2="480" stroke="url(#accent)" stroke-width="3" opacity="0.7"/>
+</svg>

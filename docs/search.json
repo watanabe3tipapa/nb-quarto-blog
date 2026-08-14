@@ -235,6 +235,41 @@
     "href": "index.html",
     "title": "nb-quarto-blog",
     "section": "",
-    "text": "TEST POST\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nFrom NB\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Web Development\n\n\n\nwebdevelopment\n\nhtml\n\ncss\n\njavascript\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\ntest - Quarto-blog\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nPython Tips and Tricks for Better Code\n\n\n\npython\n\nprogramming\n\ntips\n\n\n\n\n\n\n\n\n\nNov 11, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Data Visualization\n\n\n\ndata-science\n\nvisualization\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 10, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nNov 9, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To Quarto Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nNov 9, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\nNo matching items"
+    "text": "DeepSeek Harness (DSH)のリリースについて\n\n\n\nblog\n\nai\n\ndeepseek\n\nagent\n\n\n\n\n\n\n\n\n\nAug 14, 2026\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nTEST POST\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nFrom NB\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Web Development\n\n\n\nwebdevelopment\n\nhtml\n\ncss\n\njavascript\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\ntest - Quarto-blog\n\n\n\nblog\n\n\n\n\n\n\n\n\n\nNov 11, 2025\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nPython Tips and Tricks for Better Code\n\n\n\npython\n\nprogramming\n\ntips\n\n\n\n\n\n\n\n\n\nNov 11, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Data Visualization\n\n\n\ndata-science\n\nvisualization\n\ntutorial\n\n\n\n\n\n\n\n\n\nNov 10, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nNov 9, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To Quarto Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nNov 9, 2024\n\n\nwatanabe3tipapa\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html",
+    "href": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html",
+    "title": "DeepSeek Harness (DSH)のリリースについて",
+    "section": "",
+    "text": "DeepSeek Harness (DSH) は、DeepSeek が提供するプラグインベースのエージェントフレームワークです。"
+  },
+  {
+    "objectID": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#主な特徴",
+    "href": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#主な特徴",
+    "title": "DeepSeek Harness (DSH)のリリースについて",
+    "section": "主な特徴",
+    "text": "主な特徴\n\n任意の LLM・プロバイダーと組み合わせられる\nDeepSeek だけでなく、OpenAI、Anthropic、Azure など 30 以上のプロバイダーに対応し、役割ごとに異なるモデルを割り当てられます。\nプラグインエコシステム\ndsh-vision, dsh-pdf, dsh-weather など、ツールや UI 拡張のプラグインが多数用意されており、plugin-registry で簡単に追加・管理できます。\n安全な実行環境\nコマンド実行はサンドボックス化され、プランモードではファイル変更を行わず、承認が必要な操作は UI が確認ダイアログを出します。\n永続的セッションと履歴\n各タスクは append-only ledger に記録され、fleet resume で途中から再開可能です。"
+  },
+  {
+    "objectID": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#使用方法概要",
+    "href": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#使用方法概要",
+    "title": "DeepSeek Harness (DSH)のリリースについて",
+    "section": "使用方法（概要）",
+    "text": "使用方法（概要）\n\nWeb UI 起動 – ルート README の指示で dsh を起動し、表示された URL にアクセス。\nモデル設定 – Settings → Models で DeepSeek などの API キーを入力。\nワークスペース選択 – プロジェクトディレクトリを選んでファイル操作対象を決定。\nタスク実行 – チャットウィンドウに「リポジトリを要約して主要パッケージを列挙してください」のように指示すると、エージェントがコードを読み、必要に応じてコマンドを走らせて結果を返します。"
+  },
+  {
+    "objectID": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#開発拡張",
+    "href": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#開発拡張",
+    "title": "DeepSeek Harness (DSH)のリリースについて",
+    "section": "開発・拡張",
+    "text": "開発・拡張\n\n新しいプラグインは packages/ に ESM 形式で追加し、ctx.effect() / ctx.on() で登録。\nvendor/ ディレクトリに外部依存（Cordis など）のソースコードがピン留めされ、vendor/README.md の手順で更新できます。\n\nDeepSeek Harness は、「好きなモデルで好きな作業を自動化」 できるオープンソースのエージェント基盤として、CLI、Web UI、VS Code など多様なクライアントから利用可能です。"
+  },
+  {
+    "objectID": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#quarto-.qmd-との親和性",
+    "href": "posts/blog/2026-08-14-deepseek-harness-dsh-release/index.html#quarto-.qmd-との親和性",
+    "title": "DeepSeek Harness (DSH)のリリースについて",
+    "section": "Quarto (.qmd) との親和性",
+    "text": "Quarto (.qmd) との親和性\n.qmd（Quarto Markdown）ファイルは DeepSeek Harness のテキスト処理エンジンと相性が良いです。\n\nプラグインで直接扱える\nDeepSeek Harness では「ファイル操作」プラグインが標準で提供されており、任意のテキストファイルを 読み込み・書き換え・保存 できます。.qmd はプレーンテキストなので、プラグインにパスを渡すだけで内容を取得し、内容の要約や構造解析、コードブロック抽出などのタスクを実行できます。\nコードブロックと実行結果の統合\nQuarto のコードチャンク（{r}、{python} など）はプレーンテキストとして認識されるため、LLM にコード実行指示を出す際にそのまま送信でき、実行結果を再び .qmd に埋め込むフローがシームレスです。\nCI/CD パイプラインでの自動化\nHarness の CLI から dsh run &lt;task&gt; を呼び出すだけで、.qmd を対象に自動要約・目次生成・画像キャプション付与といったバッチ処理が可能です。これにより、Quarto プロジェクトのビルド前に AI がコンテンツを最適化できます。\n拡張プラグインの作成\n必要なら 独自プラグイン（例: dsh-quarto）を作り、Quarto のメタデータ（YAML front-matter）を解析して、ドキュメント構造をモデルに渡すことも容易です。プラグインは packages/ に追加し、ctx.effect() でフックすれば即座に利用できます。\n\n結論: .qmd は単なるテキストファイルであるため、DeepSeek Harness のファイル操作やコード実行プラグインと自然に連携でき、Quarto ドキュメントの自動処理・最適化に有効です。"
   }
 ]
