@@ -2,7 +2,7 @@
 
 **nb が紡ぐ、Quarto ブログ。**
 
-nb-quarto-blog は、[nb](https://xwmx.github.io/nb/) のノートブックをそのまま GitHub リポジトリとして公開する個人ブログです。nb でノートを作成・編集すると自動でコミットされ、push 後は GitHub Actions が [Quarto](https://quarto.org/) でレンダリングし、GitHub Pages へ公開します。
+nb-quarto-blog は、[nb](https://xwmx.github.io/nb/) のノートブックをそのまま GitHub リポジトリとして公開する個人ブログの実例です。nb でノートを作成・編集すると自動でコミットされ、push 後は GitHub Actions が [Quarto](https://quarto.org/) でレンダリングし、GitHub Pages へ公開されるワークフローを備えています。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-v0.2.0-blue.svg)](https://github.com/watanabe3tipapa/nb-quarto-blog/releases)
@@ -11,141 +11,119 @@ nb-quarto-blog は、[nb](https://xwmx.github.io/nb/) のノートブックを�
 
 [日本語](README.md) | [English](README_EN.md)
 
+## 概要
+
+このリポジトリは「ノートを書くこと」をそのままブログ公開につなげる運用を目指しています。ローカルで nb を使ってノートを追加・編集し、GitHub に push すると、CI が投稿の整理・フロントマターの整備・Quarto によるレンダリング・GitHub Pages へのデプロイまでを自動化します。
+
 ## コンセプト
 
-### なぜ「nb × Quarto」なのか
+- ノートを書く＝投稿を公開する、という運用の一本化
+- ルートに置いた単純な `.md` を CI がカテゴリ判定して `posts/` へ整理・`.qmd` に変換
+- 自動処理によるコミットには `[skip ci]` を付与して、CI の無限ループを防止
 
-ブログ運用は「書く」ことと「公開する」ことの二重管理になりがちです。エディタで本文を書き、別の画面でビルドし、また別の場所でデプロイする——この手間が投稿のハードルを上げます。
+## 主な特徴
 
-nb-quarto-blog はこの流れを一本化します。**ノートを書く＝投稿を公開する** 運用です。
+- nb によるノート管理（`nb add` / `nb edit` / `nb show` など）
+- Quarto 製のサイト（テーマは `cosmo` 等、検索・TOC・コードコピー対応）
+- カテゴリ自動判定と `posts/<category>/` への自動振り分け
+- `.md` -> `.qmd` 変換とフロントマター（`date:`）の自動挿入（Asia/Tokyo）
+- 自動コミットは `[skip ci]` を付けて CI の無限ループを防止
+- GitHub Actions による `quarto render` と GitHub Pages へのデプロイ
 
-| 営み | nb-quarto-blog の対応物 |
-|---|---|
-| ノート（記事）を書く | `nb add` でエディタが開き、そのまま Markdown で執筆 |
-| 記事を整理する | CI がカテゴリ判定し `posts/<category>/` へ自動整理・`.qmd` 変換 |
-| 日付を揃える | CI がフロントマターの `date:` を自動挿入（Asia/Tokyo） |
-| サイトをビルドする | GitHub Actions が `quarto render` を実行 |
-| 公開する | 成果物を GitHub Pages へ自動デプロイ |
-
-### 自動化は「無限ループしない」が命
-
-本ブログは **コミットが CI を再起動しない** 仕組みを徹底しています。投稿整理・変換・日付挿入のコミットには `[skip ci]` を付けて push するため、自動処理が新たな push を生んでループすることがありません。
-
-- **nb 一体運用** — ノートブックがそのままリポジトリ（Git sync）
-- **自動整理** — ルート直下の `.md` をカテゴリ判定して `posts/` へ移動・`.qmd` 変換
-- **CI 自動公開** — `main` への push でビルドからデプロイまで完了
-
-## 特徴
-
-- **nb で記事管理**: `nb add` / `nb edit` / `nb show` でノートを一元管理
-- **Quarto 製サイト**: テーマ `cosmo`、検索、TOC、コードコピー対応
-- **カテゴリ自動判定**: 本文のキーワードから `posts/<category>/` へ自動振り分け
-- **`.md` / `.qmd` 両対応**: 変換スクリプトがフロントマター付き `.qmd` を生成
-- **日付自動挿入**: フロントマターに `date:`（JST）を自動付与
-- **`[skip ci]` で安全**: 自動コミットが無限ループを発生させない
-- **CI 自動公開**: GitHub Actions が `quarto render` し GitHub Pages へ配信
-
-## セットアップ
+## セットアップ（確認できる手順のみ）
 
 ### 前提条件
 
-| ツール | 必要 | 確認コマンド |
-|---|---|---|
-| [Quarto](https://quarto.org/) | 必須（ビルド） | `quarto --version` |
-| [nb](https://xwmx.github.io/nb/) | 推奨（投稿運用） | `nb --version` |
-| R | 任意（`{r}` チャンクのみ） | `R --version` |
-| Git / GitHub | 必須（公開・同期） | `git --version` |
+- Quarto（サイトのビルドに必要）
+- nb（投稿運用に推奨）
+- Git / GitHub（公開・同期に必要）
+- R（任意、R チャンクを含む場合）
 
-macOS では `brew install --cask quarto` で Quarto、`brew install xwmx/taps/nb` で nb を導入できます。
+README 内では各ツールの確認コマンド例として次が挙げられています。
 
-### 1. ノートブックを追加する
+- `quarto --version`
+- `nb --version`
+- `R --version`
+- `git --version`
+
+macOS に関する補足として、README では `brew install --cask quarto` と `brew install xwmx/taps/nb` による導入例が示されています。
+
+### 基本的な操作例
+
+（以下は README に記載されている操作例です。）
+
+- ノートブックの追加（ローカルにクローン／同期）:
 
 ```bash
 nb notebooks add https://github.com/watanabe3tipapa/nb-quarto-blog.git
 ```
 
-### 2. プレビューする
+- プレビュー:
 
 ```bash
 quarto preview
 ```
 
-http://localhost:XXXX が開きます（ポートは環境により異なります）。
-
-### 3. レンダリングする
+- レンダリング（成果物は docs/ に出力）:
 
 ```bash
 quarto render
 ```
 
-成果物は `docs/` に出力されます。
-
-### 4. 公開する
-
-`main` への push で GitHub Actions が自動でビルド・デプロイします。
-
-## 投稿の作成〜公開フロー
+- ノート編集・一覧・同期の操作例:
 
 ```bash
-# ノートを追加（エディタが開く）
 nb add
-
-# タイトルと本文を指定して追加
 nb add "記事本文" --title "記事タイトル"
-
-# ノート一覧 / 表示 / 編集
 nb ls
 nb show <id>
 nb edit <id>
-
-# GitHub へ同期（公開トリガー）
 nb git push
 ```
 
-- ルート直下の `.md` を置くと CI が `posts/` へ整理・変換します。
-- 変換・日付挿入の自動コミットは `[skip ci]` 付きで、無限ループを回避します。
-- 直接 `.qmd` を `posts/<category>/<dir>/index.qmd` に置いて push する方法も可能です。
+README では、ルート直下に `.md` を置くと CI が `posts/` へ整理・変換する旨が説明されています。また、変換・日付挿入の自動コミットには `[skip ci]` を付けることが明示されています。
 
-## ディレクトリ構成
+## 投稿の作成から公開まで（要約）
 
-| パス | 内容 |
-|---|---|
-| [index.qmd](index.qmd) | トップページ（記事一覧） |
-| [about.qmd](about.qmd) | プロフィールページ |
-| [_quarto.yml](_quarto.yml) | サイト全体の設定 |
-| [_metadata.yml](_metadata.yml) | 共有メタデータ（OG / Twitter カード） |
-| [posts/](posts/) | カテゴリ別の記事（`.qmd`） |
-| [posts/_metadata.yml](posts/_metadata.yml) | 投稿共通設定（`freeze` など） |
-| [styles.css](styles.css) | 追加スタイル |
-| [.github/workflows/publish.yml](.github/workflows/publish.yml) | ビルド・デプロイの CI |
-| [.github/scripts/](.github/scripts/) | 投稿整理・変換・日付挿入スクリプト |
+1. ローカルで nb を使ってノートを作成
+2. リポジトリへコミットして push
+3. GitHub Actions が自動で整理・変換・日付挿入を行い、Quarto でレンダリング
+4. 生成物を GitHub Pages で公開
 
-## 自動化の仕組み
+## ディレクトリ構成（主なファイル）
 
-`main` に `.md` / `.qmd` を push すると、CI が自動的に:
+- index.qmd — トップページ（記事一覧）
+- about.qmd — プロフィールページ
+- _quarto.yml — サイト全体の設定
+- _metadata.yml — 共有メタデータ（OG / Twitter カード）
+- posts/ — カテゴリ別の記事（`.qmd`）
+- posts/_metadata.yml — 投稿共通設定
+- styles.css — 追加スタイル
+- .github/workflows/publish.yml — ビルド・デプロイの CI
+- .github/scripts/ — 投稿整理・変換・日付挿入のスクリプト
 
-1. ルート直下の `.md` を内容からカテゴリ判定し `posts/<category>/<dir>/index.md` へ移動
-2. `.md` を `.qmd` に変換（`[skip ci]` でコミット）
-3. フロントマターの `date:` が未設定なら自動挿入（`[skip ci]` でコミット）
-4. `quarto render` を実行
-5. GitHub Pages へデプロイ
+（上記はリポジトリ内に存在が確認できるファイル・パスに基づきます。）
+
+## 自動化の詳細（README に基づく説明）
+
+CI のフロー（README の説明を要約）:
+
+1. ルート直下の `.md` を本文のキーワード等からカテゴリ判定して `posts/<category>/<dir>/index.md` に移動
+2. `.md` を `.qmd` に変換してコミット（変換コミットには `[skip ci]`）
+3. フロントマターに `date:` が設定されていなければ自動で挿入（挿入コミットにも `[skip ci]`）
+4. `quarto render` を実行してサイト生成
+5. 出力を GitHub Pages にデプロイ
 
 ## コントリビューション
 
-コントリビューションは大歓迎です。誤字や不正確な記述を見つけた場合は、まず [issue](https://github.com/watanabe3tipapa/nb-quarto-blog/issues) を開いて内容を共有してください。
+貢献は歓迎されています。README には基本的な手順（Issue を開く、フォーク、ブランチ作成、コミット、プルリクエスト作成）が示されています。まず Issue を立てて意図を共有することが推奨されています。
 
-1. リポジトリをフォーク
-2. 機能ブランチを作成 (`git checkout -b fix/typo-in-post`)
-3. 変更をコミット (`git commit -m 'Fix typo in post'`)
-4. ブランチにプッシュ (`git push origin fix/typo-in-post`)
-5. Pull Request を作成
+## 連絡先・参照先
 
-## 連絡先
-
-GitHub: [https://github.com/watanabe3tipapa/nb-quarto-blog](https://github.com/watanabe3tipapa/nb-quarto-blog)
-
-公開サイト: [https://watanabe3tipapa.github.io/nb-quarto-blog/](https://watanabe3tipapa.github.io/nb-quarto-blog/)
+- リポジトリ: https://github.com/watanabe3tipapa/nb-quarto-blog
+- 公開サイト: https://watanabe3tipapa.github.io/nb-quarto-blog/
+- Issue: https://github.com/watanabe3tipapa/nb-quarto-blog/issues
 
 ## ライセンス
 
-MITライセンス — 詳細は [LICENSE](LICENSE) ファイルを参照してください。
+MIT ライセンス — 詳細はリポジトリ内の LICENSE ファイルを参照してください。
